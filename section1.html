@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>My Todo App</title>
+  </head>
+  <body>
+    <button>Press me</button>
+    <script>
+      let todo1 = 'Get groceries';
+      let todo2 = 'Wash car';
+      let todo3 = 'Make dinner';
+
+      function addTodo(todoTitle) {
+        let element = document.createElement('div');
+        element.innerText = todoTitle;
+        document.body.appendChild(element);
+      }
+
+      addTodo(todo1);
+      addTodo(todo2);
+      addTodo(todo3);
+    </script>
+  </body>
+</html>
